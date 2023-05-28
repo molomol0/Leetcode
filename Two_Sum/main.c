@@ -4,10 +4,16 @@
 int* twoSum(int* nums, int numsSize, int target, int *returnSize){
 	int i = 0;
 	int j;
-	int *res = malloc(2 * sizeof(int));
+	int *res;
+
+	res = malloc(2 * sizeof(int));
+	if (!res)
+		return 0;
+	res[0] = 0;
+	res[1] = 0;
 	*returnSize = 2;
 
-	while (i < numsSize - 1)
+	while (i <= numsSize - 1)
 	{
 		j = i + 1;
 		while (j <= numsSize)
