@@ -1,3 +1,3 @@
 # Leetcode
 
-Really not optimize Leetcode of a beginner in C
+Really not optimized Leetcode of a beginner in C
